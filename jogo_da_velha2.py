@@ -2,11 +2,9 @@ import pygame
 import sys
 import math
 
-# Inicialização do Pygame
 pygame.init()
 
-# Configurações da janela
-WIDTH, HEIGHT = 600, 700  # Espaço extra para os botões e o placar
+WIDTH, HEIGHT = 600, 700  
 LINE_WIDTH = 10
 SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Jogo da Velha com IA")
@@ -15,19 +13,16 @@ BUTTON_FONT = pygame.font.Font(None, 40)
 SCORE_FONT = pygame.font.Font(None, 50)
 COLORS = {"bg": (28, 170, 156), "line": (23, 145, 135), "X": (84, 84, 84), "O": (242, 235, 211), "button": (200, 200, 200)}
 
-# Tabuleiro inicial
 board = [[" " for _ in range(3)] for _ in range(3)]
 
-# Variáveis do jogo
 CELL_SIZE = WIDTH // 3
 PLAYER = "X"
 AI = "O"
 player_score = 0
 ai_score = 0
 current_player = PLAYER
-start_with_ai = False  # Alterna quem inicia a rodada
+start_with_ai = False  
 
-# Botões
 BUTTON_RESTART = pygame.Rect(100, 620, 150, 50)
 BUTTON_EXIT = pygame.Rect(350, 620, 150, 50)
 
