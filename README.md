@@ -14,10 +14,6 @@ Pygame
 
 🎮 Como jogar
 Faça o download ou clone este repositório:
-bash
-Copiar código
-git clone https://github.com/seu-usuario/jogo-da-velha-com-ia.git
-cd jogo-da-velha-com-ia
 Certifique-se de que o Python e o Pygame estão instalados:
 bash
 Copiar código
